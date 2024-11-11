@@ -37,50 +37,52 @@ Many companies report EBITDA or earnings differently, which is why we created a 
 
 ## Brief Description of Metrics
 
-1. **Revenue**: Profit made in sales.
+1. **Revenue**: Sales prior to any expenses.
 
-2. **Stock price**: Market valuation of company.
+2. **Stock price**: Market value of a company's shares.
 
 3. **Gross Profit**: Profit after deducting cost of goods sold.
 
-4. **Net Income**: Company income after deducting expenses and cost of goods sold.
-    $$\( \text{Net Income} = \text{Revenue} – \text{Expenses} – \text{COGS}\)$$
+4. **EBITDA**: Earnings before Interest Taxes Depreciation & Amortization - A non-GAAP, capital structure neutral, accrual accounting measure of profitability. 
 
-5. **Cash Flow From Operations**: Cash generated from business operations. 
+5. **Net Income**: Company income after deducting all expenses (taxes, interest, SG&A, COGS).
+    $$\( \text{Net Income} = \text{Revenue} – \text{Expenses}\)$$
 
-6. **EBITDA per Employee**: The proportion of the company's EBITDA that each employee contributes to.
+6. **Cash Flow From Operations**: Cash generated from business operations. 
 
-7. **Free Cash Flow**: Remaining cash after operating expenses and capital expenditures.
+7. **EBITDA per Employee**: The proportion of the company's EBITDA that each employee contributes to.
+
+8. **Free Cash Flow**: Non-GAAP metric representing Cash Flow From Operations less Capital expenditures.
     $$\( \text{Free Cash Flow} = \text{Cash Flow from Operations} – \text{Capital Expenditures} \)$$
 
-8. **EBITDA Margins %**: EBITDA as a percentage total revenue.
+9. **EBITDA Margins %**: EBITDA as a percentage of total revenue.
 
-9. **Cash Flow from Operations % of Sales**: OCF as a percentage of revenue. 
+10. **Cash Flow from Operations % of Sales**: Cash Flow From Operations as a percentage of revenue. 
 
-10. **EBITDA Growth** and **Revenue Growth**: Growth percentage of current year's metric value from year before.
+11. **EBITDA Growth** and **Revenue Growth**: Growth percentage of current year's metric value from year before.
 
 
-11. **Modified Free Cash Flow**: Free Cash Flow adjustment used to assess liquitidy by showing free cash available after reinvesting assets.
+12. **Modified Free Cash Flow**: Cash Flow From Operations less Cash Flow From Investing (which includes miscellaneous investing activities).
 
 <br>
 
 ## Determining Company Financial Health Trajectory
 
 “Is this company financial healthy” can be answered by several factors, including... 
-* bankruptcy/restructuring events
+* bankruptcy/restructuring events (such as debt exchanges, a large reduction of employees, etc)
 * growth/non-growth
-* credit ratings
-* stock rating from top 3 banks
+* public credit ratings (agency downgrades/upgrades)
+* stock rating e.g. Buy, Hold, Sell, ratings from accredited financial institutions
 * multiple other metrics
 
 ### Predicting Financial Performance 
-The financial metrics we considered include stock price, revenue, and EBITDA margin. A growth rate above 5-10% YOY signifies financial growth.
+The financial metrics we considered include stock price, revenue, and EBITDA margin. A growth rate above 5-10% YOY signifies more significant growth or an acquisition consolidating into financials.
  
-Which metrics indicate poor financial performance?:
+Which metrics are indicators of poor financial health?:
 * Debt/EBITDA ratio above 5x
 * EBITDA/Interest Expense below 1.1x
 * Stock price declines below 20% YTD
-* Revenue declines over 5% fiscal-to-fiscal YOY
+* Revenue declines over 5% fiscal-to-fiscal YoY
 * Negative Free Cash Flow
 * Low EBITDA margins 
 
