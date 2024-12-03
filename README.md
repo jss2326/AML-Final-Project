@@ -17,6 +17,13 @@ The focus of this project is on measuring a company’s financial health and per
 
 <br>
 
+## Installation
+
+1. clone this repo
+2. pip install -r requirements.txt
+3. the dataset we use is included in this repo, but to see how we created the data, run the data creation script `generate.py` to create the dataset
+4. run the Jupyter notebook
+
 ## Dataset
 This directory includes the following.
 
