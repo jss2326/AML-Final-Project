@@ -29,7 +29,7 @@ This directory includes the following.
 3. **Past project deliverables**; this is added for reference and contains notes that we can refer to throughout the project.
 
 
- **FinancialGrowthMetrics.csv** is Financial data from 12 investment grade companies. Income statement and balance sheet information was accessed from (1) a Kaggle dataset (2) Yahoo! Finance financials and (3) 10-K reports from the EDGAR archives on SEC.gov. 
+ **FinancialGrowthMetrics.csv** is Financial data from 12 investment grade companies. Income statement and balance sheet information was accessed from (1) [a Kaggle dataset](https://www.kaggle.com/datasets/jeannicolasduval/2024-fortune-1000-companies/data) (2) Yahoo! Finance financials and (3) 10-K reports from the EDGAR archives on SEC.gov. 
 
 Many companies report EBITDA or earnings differently, which is why we created a dataset based on what we determined is the most consistent reflection of income statement and balance sheet data.
 
