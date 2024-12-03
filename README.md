@@ -99,3 +99,34 @@ Which metrics indicate growth?:
 ---
 
 These metrics reflect how well the company is doing, what investors think about a company's growth potential, etc. More information on why these metrics were chosen and which machine learning techniques we will used based on the nature of our dataset can be found under our Project Deliverable #1 and Project Deliverable #2 submissions (also listed under this directory). 
+
+---
+
+How certain features were engineered...
+
+## 1. Relevant Columns
+Columns that directly contribute to the prediction of market capitalization:
+
+### Financial Metrics:
+Revenues_M: Total revenue (essential predictor).
+RevenuePercentChange: YOY revenue growth.
+Profits_M: Total profits.
+ProfitsPercentChange: Year-over-year profit growth.
+Assets_M: Total assets (linked to financial health).
+MarketCap_March28_M: Market cap at a previous time point.
+Employee Metrics:
+
+Number_of_employees: Workforce size (indicator of scalability and operational scale).
+### Categorical Features for Grouping:
+Sector: Group companies by sector to capture sectoral effects.
+Industry: Group companies at a finer level for comparisons.
+## 2. Irrelevant Columns
+### Columns unlikely to provide predictive power for market cap:
+
+Founder_is_CEO: Binary indicator (weak link to market cap prediction).
+FemaleCEO: Similar to Founder_is_CEO, low correlation with financial metrics.
+Growth_in_Jobs: Operational data not directly tied to market cap.
+Change_in_Rank: Rank-based data (more relevant for reporting, not predicting market cap).
+Ticker: Useful for mapping external data but not directly predictive.
+Company: Identifier, not a predictive feature.
+Website: Informational, not predictive.
