@@ -25,7 +25,6 @@ In this project, we use multiple regression models to predict a company's 2024 M
 ### II. Classification Objective
 Positive financial performance is indicated by whether it is a *Growth* or *Non-Growth* company. Each company will be classified as a **growth** or **non-growth** business depending on its **EBITDA Margins**. 
 
-<br>
 
 ## Installation
 
@@ -35,7 +34,7 @@ Positive financial performance is indicated by whether it is a *Growth* or *Non-
 4. (Optional) the dataset we use is included in this repo, but to see how we created the data, run the data creation script `generate.py` to create the dataset
 5. Run the Jupyter notebook!
 
-<br>
+
 
 ## Dataset
 Many companies report EBITDA or earnings differently, which is why we created a dataset based on what we determined is the most consistent reflection of income statement and balance sheet data. **FinancialData.csv** is Financial data from Fortune1000 companies that was created using different sources of financial data. Income statement and balance sheet information was accessed from:
@@ -44,7 +43,7 @@ Many companies report EBITDA or earnings differently, which is why we created a 
 2. Yahoo! Finance financials.
 3. 10-K reports from the EDGAR archives on SEC.gov.
 
-<br>
+
 
 ## Setup
 This directory includes the following files.
@@ -56,7 +55,7 @@ This directory includes the following files.
 4. **Past project deliverables**: this is added for reference and contains notes that we can refer to throughout the project.
 5. `requirements.txt`: installation requirements.
 
-<br> 
+ 
 
 
 ## Brief Description of Metrics Used
