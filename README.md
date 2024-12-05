@@ -13,96 +13,64 @@ Group 24: Yu-Heng Chi, Param Sejpal, Jessica Villanueva, Yihan Yang, Zhiyi Zhang
 
 ## Objective
 
-The focus of this project is on measuring a company’s financial health and performance trajectory based on predicted financial metrics, such as *stock price*, *revenue*, and *EBITDA margins*. Positive performance is indicated by whether it is a *Growth* or *Non-Growth* company. The financial metrics considered are from 10-K reports from 2009-2023 of 12 investment grade companies.
+The focus of this project is to measure a company’s financial health and performance trajectory based on predicted financial metrics, such as *Market Cap* and *EBITDA Margins*. The companies we considered are Fortune1000 companies and the metrics are gathered from financial reports in 2024.
+
+### Determining Company Financial Health Trajectory
+
+“Is this company financial healthy” can be answered by several factors. We performed regression predict market capitalization ("Market Cap") and we classified companies as healthy or non-healthy based on their status as a growth or non-growth company. 
+
+### I. Regression Objective
+In this project, we use multiple regression models to predict a company's 2024 Market Cap using financial metrics including EBITDA, revenue, and other relevant features.
+
+### II. Classification Objective
+Positive financial performance is indicated by whether it is a *Growth* or *Non-Growth* company. Each company will be classified as a **growth** or **non-growth** business depending on its **EBITDA Margins**. 
 
 <br>
 
 ## Installation
 
 1. clone this repo
-2. pip install -r requirements.txt
+2. `pip install -r requirements.txt`
 3. the dataset we use is included in this repo, but to see how we created the data, run the data creation script `generate.py` to create the dataset
 4. run the Jupyter notebook
 
+<br>
+
 ## Dataset
-This directory includes the following.
-
-1. **FinancialGrowthMetrics.csv**: the final dataset we created and are using in this project.
-
-2. **FinancialGrowthMetrics.xlsx**: the original Excel file where you can see how the dataset was created.
-    * Financial metrics that were added to the dataset are marked orange.
-    * Metrics that are not used are light grey and crossed out.
-
-3. **Past project deliverables**; this is added for reference and contains notes that we can refer to throughout the project.
-
-
- **FinancialGrowthMetrics.csv** is Financial data from 12 investment grade companies. Income statement and balance sheet information was accessed from (1) [a Kaggle dataset](https://www.kaggle.com/datasets/jeannicolasduval/2024-fortune-1000-companies/data) (k04dRunn3r on Kaggle) (2) Yahoo! Finance financials and (3) 10-K reports from the EDGAR archives on SEC.gov. 
-
-Many companies report EBITDA or earnings differently, which is why we created a dataset based on what we determined is the most consistent reflection of income statement and balance sheet data.
-
-<br> 
-
-## Brief Description of Metrics
-
-1. **Revenue**: Sales prior to any expenses.
-
-2. **Stock price**: Market value of a company's shares.
-
-3. **Gross Profit**: Profit after deducting cost of goods sold.
-
-4. **EBITDA**: Earnings before Interest Taxes Depreciation & Amortization - A non-GAAP, capital structure neutral, accrual accounting measure of profitability. 
-
-5. **Net Income**: Company income after deducting all expenses (taxes, interest, SG&A, COGS).
-    $$\( \text{Net Income} = \text{Revenue} – \text{Expenses}\)$$
-
-6. **Cash Flow From Operations**: Cash generated from business operations. 
-
-7. **EBITDA per Employee**: The proportion of the company's EBITDA that each employee contributes to.
-
-8. **Free Cash Flow**: Non-GAAP metric representing Cash Flow From Operations less Capital expenditures.
-    $$\( \text{Free Cash Flow} = \text{Cash Flow from Operations} – \text{Capital Expenditures} \)$$
-
-9. **EBITDA Margins %**: EBITDA as a percentage of total revenue.
-
-10. **Cash Flow from Operations % of Sales**: Cash Flow From Operations as a percentage of revenue. 
-
-11. **EBITDA Growth** and **Revenue Growth**: Growth percentage of current year's metric value from year before.
-
-
-12. **Modified Free Cash Flow**: Cash Flow From Operations less Cash Flow From Investing (which includes miscellaneous investing activities).
+Many companies report EBITDA or earnings differently, which is why we created a dataset based on what we determined is the most consistent reflection of income statement and balance sheet data. **FinancialData.csv** is Financial data from Fortune1000 companies that was created using different sources of financial data. Income statement and balance sheet information was accessed from:
+ 
+1. [a Kaggle dataset](https://www.kaggle.com/datasets/jeannicolasduval/2024-fortune-1000-companies/data) (k04dRunn3r on Kaggle).
+2. Yahoo! Finance financials.
+3. 10-K reports from the EDGAR archives on SEC.gov.
 
 <br>
 
-## Determining Company Financial Health Trajectory
+## Setup
+This directory includes the following files.
 
-“Is this company financial healthy” can be answered by several factors, including... 
-* bankruptcy/restructuring events (such as debt exchanges, a large reduction of employees, etc)
-* growth/non-growth
-* public credit ratings (agency downgrades/upgrades)
-* stock rating e.g. Buy, Hold, Sell, ratings from accredited financial institutions
-* multiple other metrics
+1. **FinancialData.csv**: the final dataset we created and are using in this project.
+2. `generate.py`: a quick script that can be run to see how the dataset was created.
+    * Financial metrics that were added to the dataset come from Yahoo! Finance.
+3. **KaggleData.csv**: The Kaggle dataset with basic company metrics (ticker, revenue, etc.) used in creating the dataset. 
+4. **Past project deliverables**: this is added for reference and contains notes that we can refer to throughout the project.
+5. `requirements.txt`: installation requirements.
 
-### Predicting Financial Performance 
-The financial metrics we considered include stock price, revenue, and EBITDA margin. A growth rate above 5-10% YOY signifies more significant growth or an acquisition consolidating into financials.
- 
-Which metrics are indicators of poor financial health?:
-* Debt/EBITDA ratio above 5x
-* EBITDA/Interest Expense below 1.1x
-* Stock price declines below 20% YTD
-* Revenue declines over 5% fiscal-to-fiscal YoY
-* Negative Free Cash Flow
-* Low EBITDA margins 
+<br> 
 
-### Growth Indication
-A company will be classified as a **growth** or **non-growth** depending on certain indicators. 
 
-Which metrics indicate growth?:
-* Positive EBIDTA growth year-to-year
-* Similarly, positive revenue growth year-to-year
-* A high proportion of EBITDA per Employee
-* High Cash Flow from Operations 
-* Consistently positive Net Income 
+## Brief Description of Metrics Used
+
+1. **Rank**: company rank in the Fprtune1000 list.
+2. **Ticker**: The stock symbol associated with a company.
+3. **Sector**, **Industry**, **Type**: Economic categorization a company belongs to.
+4. **Profitable**: (EBITDA Profitability) Profitability of a company, i.e., if total income outweighs expenses.
+5. **Revenue**: Sales prior to any expenses.
+6. **Market Cap**: Size of the equity portion of the business.
+7. **Gross Profit**: Profit after deducting cost of goods sold.
+8. **EBITDA**: Earnings before Interest Taxes Depreciation & Amortization - A non-GAAP, capital structure neutral, accrual accounting measure of profitability. EBITDA margins represents EBITDA as a percentage of total revenue.
+9. **Profits Percent Change** and **Revenue Percent Change**: Growth percentage of current year's metric value from year before.
+<br>
 
 ---
 
-These metrics reflect how well the company is doing, what investors think about a company's growth potential, etc. More information on why these metrics were chosen and which machine learning techniques we will used based on the nature of our dataset can be found under our Project Deliverable #1 and Project Deliverable #2 submissions (also listed under this directory). 
+These metrics reflect how well the company is doing, potential sudden market events, and what investors think about a company's growth potential, etc. More information on why these metrics were chosen and which machine learning techniques can be found under our Project Deliverable #1 and Project Deliverable #2 submissions (included in `deliverables/`). 
