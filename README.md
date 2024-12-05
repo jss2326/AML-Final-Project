@@ -29,10 +29,11 @@ Positive financial performance is indicated by whether it is a *Growth* or *Non-
 
 ## Installation
 
-1. clone this repo
-2. `pip install -r requirements.txt`
-3. the dataset we use is included in this repo, but to see how we created the data, run the data creation script `generate.py` to create the dataset
-4. run the Jupyter notebook
+1. Clone this repo
+2. Set up a virtual environment
+3. `pip install -r requirements.txt`
+4. (Optional) the dataset we use is included in this repo, but to see how we created the data, run the data creation script `generate.py` to create the dataset
+5. Run the Jupyter notebook!
 
 <br>
 
