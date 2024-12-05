@@ -129,7 +129,7 @@ def generate_data(kaggle_data, generated_data):
     ebitda_values = []
 
     df = pd.read_csv(kaggle_data)
-    metrics = "EBITDA/LTM", "EBITDA MAargins"
+    metrics = "EBITDA/LTM", "EBITDA Margins"
 
     for ticker in df["Ticker"]:
 
@@ -160,8 +160,8 @@ if __name__ == "__main__":
     #     financial_metric = get_financials(ticker)
     #     print(f"{ticker} EBITDA: {financial_metric}")
 
-    kaggle_data = "KaggleData.csv"  # our original Kaggle dataset
-    generated_data = "FinancialData.csv"
+    kaggle_data = "data/KaggleData.csv"  # our original Kaggle dataset
+    generated_data = "data/FinancialData.csv"
 
 
     generate_data(kaggle_data, generated_data)
