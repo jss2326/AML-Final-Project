@@ -20,10 +20,10 @@ The focus of this project is to measure a company’s financial health and perfo
 “Is this company financial healthy” can be answered by several factors. We performed regression predict market capitalization ("Market Cap") and we classified companies as healthy or non-healthy based on their status as a growth or non-growth company. 
 
 ### I. Regression Objective
-In this project, we use multiple regression models to predict a company's 2024 Market Cap using financial metrics including EBITDA, revenue, and other relevant features.
+In this project, we use multiple regression models to predict a company's Market Cap using financial metrics including EBITDA, revenue, and other relevant features.
 
 ### II. Classification Objective
-Positive financial performance is indicated by whether it is a *Growth* or *Non-Growth* company. Each company will be classified as a **growth** or **non-growth** business depending on its **EBITDA Margins**. 
+Positive financial performance (described in Deliverable 1 as no bankruptcy or restructuring events, positive growth for certain financial metrics, and other factors) is indicated by whether it is a *Growth* or *Non-Growth* company. Each company will be classified as a **growth** or **non-growth** business depending on its **EBITDA Margins**. 
 
 
 ## Installation
@@ -73,4 +73,4 @@ This directory includes the following files.
 
 ---
 
-These metrics reflect how well the company is doing, potential sudden market events, and what investors think about a company's growth potential, etc. More information on why these metrics were chosen and which machine learning techniques can be found under our Project Deliverable #1 and Project Deliverable #2 submissions (included in `deliverables/`). 
+These metrics reflect how well the company is doing, potential sudden market events, and what investors think about a company's growth potential. More information on why these metrics were chosen and which machine learning techniques can be found under our Project Deliverable #1 and Project Deliverable #2 submissions (included in `deliverables/`). 
