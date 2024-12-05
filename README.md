@@ -40,7 +40,7 @@ Positive financial performance is indicated by whether it is a *Growth* or *Non-
 ## Dataset
 Many companies report EBITDA or earnings differently, which is why we created a dataset based on what we determined is the most consistent reflection of income statement and balance sheet data. **FinancialData.csv** is Financial data from Fortune1000 companies that was created using different sources of financial data. Income statement and balance sheet information was accessed from:
  
-1. [a Kaggle dataset](https://www.kaggle.com/datasets/jeannicolasduval/2024-fortune-1000-companies/data) (k04dRunn3r on Kaggle).
+1. A [Kaggle dataset](https://www.kaggle.com/datasets/jeannicolasduval/2024-fortune-1000-companies/data) (k04dRunn3r on Kaggle).
 2. Yahoo! Finance financials.
 3. 10-K reports from the EDGAR archives on SEC.gov.
 
