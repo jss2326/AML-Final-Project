@@ -146,6 +146,15 @@ def generate_data(kaggle_data, generated_data):
     df["EBITDA_Margin"] = df["EBITDA"] / df["Revenues_M"]
     df["EBITDA_Margin"] = df["EBITDA_Margin"].fillna(0)
 
+    # these columns are irrelevant
+    columns_to_drop = ['Rank', 'CEO', 'Founder_is_CEO', 'Growth_in_Jobs', 'Change_in_Rank', 
+                       'Gained_in_Rank', 'Global500', 'Dropped_in_Rank', 'Newcomer_to_the_Fortune500',
+                       'FemaleCEO', 'Worlds_Most_Admired_Companies', 'Footnote', 'Best_Companies_to_Work_For',
+                       'Country', 'HeadquartersCity', 'HeadquartersState', 'Website', 'Updated', 'Ticker']
+
+    df = df.drop(columns=columns_to_drop, errors='ignore')
+    
+
     check_values(df)
 
     df.to_csv(generated_data, index=False)
