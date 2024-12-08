@@ -23,7 +23,7 @@ The focus of this project is to measure a company’s financial health and perfo
 In this project, we use multiple regression models to predict a company's Market Cap using financial metrics including EBITDA, revenue, and other relevant features.
 
 ### II. Classification Objective
-Positive financial performance (described in Deliverable 1 as no bankruptcy or restructuring events, positive growth for certain financial metrics, and other factors) is indicated by whether it is a *Growth* or *Non-Growth* company. Each company will be classified as a **growth** or **non-growth** business depending on its **EBITDA Margins**. 
+One measure of positive financial performance (described in Deliverable 1 as no bankruptcy or restructuring events, positive growth for certain financial metrics, and other factors) that tells us information about Market Cap is *profitability*. Therefore, we will classify these businesses as *Profitable* or *Non-Profitable* companies. 
 
 
 ## Installation
