@@ -13,7 +13,7 @@ Group 24: Yu-Heng Chi, Param Sejpal, Jessica Villanueva, Yihan Yang, Zhiyi Zhang
 
 ## Objective
 
-The focus of this project is to measure a company’s financial health and performance trajectory based on predicted financial metrics, such as *Market Cap* and *EBITDA Margins*. The companies we considered are Fortune1000 companies and the metrics are gathered from financial reports in 2024.
+The focus of this project is to measure a company’s financial health and performance trajectory based on its predicted *Market Capitalization*. The companies we considered are Fortune1000 companies and the metrics are gathered from financial reports in 2024.
 
 ### Determining Company Financial Health Trajectory
 
